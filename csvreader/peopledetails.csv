@@ -1,0 +1,21 @@
+s.no,name,age,city,qualification,results,gender,percentage,blood type,mobile.no
+1,hari,22,madurai,b.e,pass,male,96.2,o+,845857
+2,ajith,23,trichy,b.com,fail,male,93.5,a+,45832838
+3,ashwini,21,chennai,b.ed,pass,female,91.8,b+,358358573
+4,suriya,24,salem,b.com,pass,male,98.9,o+,7777455
+5,indhu,21,karur,b.c.a,fail,female,91.9,b-,5638303
+6,venkatesh,22,trichy,m.com,fail,male,95.4,o+,4554850
+7,nandha,25,tiruppur,m.sc,pass,male,95.3,a+,48446464
+8,aghan,22,salem,b.e,pass,male,97.3,b+,6448481
+9,mounika,24,erode,b.ed,fail,female,96.7,o+,45940409
+10,hema,21,trichy,b.com,pass,female,93.6,b-,45495545
+11,viki,22,erode,m.com,fail,male,93.7,ob+,5543432
+12,siva,26,theni,b.tech,pass,male,92.9,ab-,584544
+13,pavi,22,madurai,b.com,fail,female,97.3,o-,405560
+14,muthu,23,vellore,m.e,fail,male,95.7,o+,6568664
+15,viji,21,theni,m.tech,fail,female,98.5,a+,944846
+16,viswa,24,trichy,m.com,pass,male,95.7,b-,34994594
+17,ajay,23,karur,m.c.a,fail,male,93.6,o+,678443
+18,ashok,21,salem,b.com,pass,male,93.5,a+,633308
+19,agalya,22,trichy,b.ed,pass,female,92.7,o+,436568
+20,geetha,21,erode,b.e,fail,female,91.8,a-,966466

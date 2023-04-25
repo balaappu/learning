@@ -1,0 +1,158 @@
+create table student (
+sid int(20),
+sname varchar(200),
+contact int(20),
+city varchar(100)
+);
+
+show tables;
+select * from student;
+
+insert into student values(2,'vino',98987787,'blr'),
+(3,'pavi',98987787,'cbe');
+
+insert into student (sid,sname,contact) values
+(2,'vino',98987787);
+
+create table cust (
+cid int primary key auto_increment,  -- unique + not null
+c_name varchar(200)
+);
+
+show tables;
+select * from cust;
+insert into cust (c_name) values('hari'),('tom'),('vino');
+
+select distinct(c_name) from cust;
+select distinct(sid) from student;
+
+select * from student where city = 'cbe' and sname = 'kavi';
+CREATE TABLE IF NOT EXISTS `customer` (
+  `CUST_CODE` varchar(6) NOT NULL,
+  `CUST_NAME` varchar(40) NOT NULL,
+  `CUST_CITY` varchar(35) DEFAULT NULL,
+  `WORKING_AREA` varchar(35) NOT NULL,
+  `CUST_COUNTRY` varchar(20) NOT NULL,
+  `GRADE` decimal(10,0) DEFAULT NULL,
+  `OPENING_AMT` decimal(12,2) NOT NULL,
+  `RECEIVE_AMT` decimal(12,2) NOT NULL,
+  `PAYMENT_AMT` decimal(12,2) NOT NULL,
+  `OUTSTANDING_AMT` decimal(12,2) NOT NULL,
+  `PHONE_NO` varchar(17) NOT NULL,
+  `AGENT_CODE` varchar(6) DEFAULT NULL,
+  KEY `CUSTCITY` (`CUST_CITY`),
+  KEY `CUSTCITY_COUNTRY` (`CUST_CITY`,`CUST_COUNTRY`)
+);
+
+INSERT INTO customer VALUES ('C00013', 'Holmes', 'London', 'London', 'UK', '2', '6000.00', '5000.00', '7000.00', '4000.00', 'BBBBBBB', 'A003  '),
+('C00001', 'Micheal', 'New York', 'New York', 'USA', '2', '3000.00', '5000.00', '2000.00', '6000.00', 'CCCCCCC', 'A008  '),
+('C00020', 'Albert', 'New York', 'New York', 'USA', '3', '5000.00', '7000.00', '6000.00', '6000.00', 'BBBBSBB', 'A008  '),
+('C00025', 'Ravindran', 'Bangalore', 'Bangalore', 'India', '2', '5000.00', '7000.00', '4000.00', '8000.00', 'AVAVAVA', 'A011  '),
+('C00024', 'Cook', 'London', 'London', 'UK', '2', '4000.00', '9000.00', '7000.00', '6000.00', 'FSDDSDF', 'A006  '),
+('C00015', 'Stuart', 'London', 'London', 'UK', '1', '6000.00', '8000.00', '3000.00', '11000.00', 'GFSGERS', 'A003  '),
+('C00002', 'Bolt', 'New York', 'New York', 'USA', '3', '5000.00', '7000.00', '9000.00', '3000.00', 'DDNRDRH', 'A008  '),
+('C00018', 'Fleming', 'Brisban', 'Brisban', 'Australia', '2', '7000.00', '7000.00', '9000.00', '5000.00', 'NHBGVFC', 'A005  '),
+('C00021', 'Jacks', 'Brisban', 'Brisban', 'Australia', '1', '7000.00', '7000.00', '7000.00', '7000.00', 'WERTGDF', 'A005  '),
+('C00019', 'Yearannaidu', 'Chennai', 'Chennai', 'India', '1', '8000.00', '7000.00', '7000.00', '8000.00', 'ZZZZBFV', 'A010  '),
+('C00005', 'Sasikant', 'Mumbai', 'Mumbai', 'India', '1', '7000.00', '11000.00', '7000.00', '11000.00', '147-25896312', 'A002  '),
+('C00007', 'Ramanathan', 'Chennai', 'Chennai', 'India', '1', '7000.00', '11000.00', '9000.00', '9000.00', 'GHRDWSD', 'A010  '),
+('C00022', 'Avinash', 'Mumbai', 'Mumbai', 'India', '2', '7000.00', '11000.00', '9000.00', '9000.00', '113-12345678', 'A002  '),
+('C00004', 'Winston', 'Brisban', 'Brisban', 'Australia', '1', '5000.00', '8000.00', '7000.00', '6000.00', 'AAAAAAA', 'A005  '),
+('C00023', 'Karl', 'London', 'London', 'UK', '0', '4000.00', '6000.00', '7000.00', '3000.00', 'AAAABAA', 'A006  '),
+('C00006', 'Shilton', 'Torento', 'Torento', 'Canada', '1', '10000.00', '7000.00', '6000.00', '11000.00', 'DDDDDDD', 'A004  '),
+('C00010', 'Charles', 'Hampshair', 'Hampshair', 'UK', '3', '6000.00', '4000.00', '5000.00', '5000.00', 'MMMMMMM', 'A009  '),
+('C00017', 'Srinivas', 'Bangalore', 'Bangalore', 'India', '2', '8000.00', '4000.00', '3000.00', '9000.00', 'AAAAAAB', 'A007  '),
+('C00012', 'Steven', 'San Jose', 'San Jose', 'USA', '1', '5000.00', '7000.00', '9000.00', '3000.00', 'KRFYGJK', 'A012  '),
+('C00008', 'Karolina', 'Torento', 'Torento', 'Canada', '1', '7000.00', '7000.00', '9000.00', '5000.00', 'HJKORED', 'A004  '),
+('C00003', 'Martin', 'Torento', 'Torento', 'Canada', '2', '8000.00', '7000.00', '7000.00', '8000.00', 'MJYURFD', 'A004  '),
+('C00009', 'Ramesh', 'Mumbai', 'Mumbai', 'India', '3', '8000.00', '7000.00', '3000.00', '12000.00', 'Phone No', 'A002  '),
+('C00014', 'Rangarappa', 'Bangalore', 'Bangalore', 'India', '2', '8000.00', '11000.00', '7000.00', '12000.00', 'AAAATGF', 'A001  '),
+('C00016', 'Venkatpati', 'Bangalore', 'Bangalore', 'India', '2', '8000.00', '11000.00', '7000.00', '12000.00', 'JRTVFDD', 'A007  '),
+('C00011', 'Sundariya', 'Chennai', 'Chennai', 'India', '3', '7000.00', '11000.00', '7000.00', '11000.00', 'PPHGRTS', 'A010  ');
+
+
+select * from customer;
+select * from customer where not cust_country = 'UK';
+
+select cust_name,cust_country,opening_amt from customer where opening_amt between 4000 and 7000;
+
+select * from customer order by cust_name;
+select * from customer order by receive_amt desc, opening_amt asc;
+
+show databases;
+
+use pavithra;
+
+show tables;
+
+select * from cust;
+
+truncate table cust;
+
+drop table cust;
+
+insert into cust (c_name) values('hari'),('tom'),('vino');
+
+create table stationary(
+id int not null unique auto_increment,
+itemname  varchar(30) not null,
+quanitity int default (100),
+price double
+);
+-- drop table stationary;
+insert into stationary (itemname,price) values ('scale',10.0);
+insert into stationary (id,itemname,quanitity,price) values (2,'pencil',11,165.0);
+
+select * from stationary;
+
+alter table stationary add constraint check (price > 20);
+alter table stationary add constraint primary key (id);
+
+create table wholeseller (
+id int primary key,
+companyname varchar(30),
+stationary_id int,
+foreign key (stationary_id) references stationary(id)
+);
+
+insert into wholeseller values (3,'xyz',2);
+
+select * from wholeseller;
+
+create index idx_custcode on customer(cust_code);
+
+
+
+select * from customer;
+
+create view australia_customers
+as select * from customer where cust_country = 'Australia';
+
+
+show tables;
+select * from australia_customers;
+
+-- joins
+
+show tables;
+
+select * from student;
+select * from stationary;
+update student set sid = 4 where city = 'blr';
+alter table student add primary key (sid);
+alter table stationary add column(sid int);
+alter table stationary add foreign key (sid) references student(sid);
+update stationary set sid = 3 where id = 2;
+insert into stationary values(4,'book',4,160,6);
+
+
+select s1.sid,s1.sname,s2.id,s2.itemname,s2.price
+from student s1
+left join stationary s2
+on s1.sid = s2.sid;
+
+select s1.sid,s1.sname,s2.id,s2.itemname,s2.price
+from student s1
+inner join stationary s2
+on s1.sid = s2.sid;
+

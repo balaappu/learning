@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css task</title>
+    <link rel="stylesheet" href="./csstask.css"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+      />
+</head> 
+<body>
+    <div class="frame">
+        <div class="container">
+         <center><h1>Louie</h1></center>
+         <br/>
+         <img
+          class="profile-image"
+          src="profile.jpg"
+          alt="No profile"/>
+         <center><h3>Louie smith</h3></center>
+         <br/>
+         <ul>
+           <center><li><a href="#">Home</a></li></center> 
+    
+           <center><li><a href="#">Collection</a></li></center> 
+    
+            <center><li><a href="#">About me</a></li></center>
+    
+            <center><li><a href="#">My service</a></li></center>
+    
+            <center><li><a href="#">Blog</a></li></center>
+    
+            <center><li><a href="#">Contact</a></li></center>
+    
+            <center><li><a href="#">News letter</a></li></center>  
+        </ul>
+          </div>
+          <div>
+         
+         <img src="city.jpg" alt="No images"/>
+
+        </div>
+      <div>
+    
+    <h3 style="color: gray">hello i am</h3>
+    <p class="font">
+        Louie smith <span> A photographer</span><br/>.I capture life
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       Quo reprehenderit, officia, debitis obcaecati architecto nam accusamus voluptate, 
+       enim nihil quis porro eius laudantium explicabo? Enim eum minima recusandae rerum voluptate.
+    </p>
+    <h4>Louie smith</h4>
+    </div>
+</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Voluptas perferendis, ipsam obcaecati magnam ipsum alias voluptatibus eligendi animi aperiam sequi sint magni expedita saepe culpa quisquam architecto repellat,
+        odit dolor?
+    </p>
+    
+</body>
+</html>
+
+
+.profile-image {
+    border: solid black 3px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;;
+}
+.frame{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: underline;
+
+}
+
+img {
+    height: 500px;
+    width: 300px;
+}
+
+span {
+    color:orange;
+}
+
+.font{
+    font-size: 35px;
+}
+
+p{
+    font-size: 35px;
+}
+h4{
+    font-family:Tangerine;
+    font-size: 20px;
+}

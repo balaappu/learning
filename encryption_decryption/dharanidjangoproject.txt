@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+    
+    <nav class="container">
+      <img
+      {% load static %}
+        src="{% static 'media/The-Painting-Company.png' %}"
+        alt="The-Painting-Company"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="{% url 'contact' %}">contact us <i class="fas fa-arrow-right"></i></a></li>
+
+      </ul>
+    </nav>
+  
+    <div class="banner">
+      <img
+        src="{% static 'media/painting-contractors.jpg' %}"
+        alt="painting-constructor"
+      />
+    </div>
+
+    <div class="sec">
+      <div class="content1">
+        <h4 class="heading">Welcome!</h4>
+        <p class="para">
+          That warm, usually well-rehearsed opening speech for the event given
+          by its host, may it be a small-scale cultural event or a company’s
+          grand awards ceremony is a welcome address. The primary purpose of
+          having one of these at every event is to greet and offer recognition
+          to all the attendees of that event.
+        </p>
+        <a href="#" class="more">Read more</a>
+      </div>
+      <div class="content2">
+        <h4 class="heading">Service</h4>
+        <p class="para">
+          That warm, usually well-rehearsed opening speech for the event given
+          by its host, may it be a small-scale cultural event or a company’s
+          grand awards ceremony is a welcome address. The primary purpose of
+          having one of these at every event is to greet and offer recognition
+          to all the attendees of that event.
+        </p>
+        <a href="#" class="more">Read more</a>
+      </div>
+      <div class="content3">
+        <h4 class="heading">About us</h4>
+        <p class="para">
+          That warm, usually well-rehearsed opening speech for the event given
+          by its host, may it be a small-scale cultural event or a company’s
+          grand awards ceremony is a welcome address. The primary purpose of
+          having one of these at every event is to greet and offer recognition
+          to all the attendees of that event.
+        </p>
+        <a href="#" class="more">Read more</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="img2">
+        <h3 class="heading2">Latest project</h3>
+        <img src="{% static 'media/wallpaint.jpg' %}" alt="wallpaint" />
+      </div>
+      <h3 class="heading2">New look</h3>
+      <p class="para2">
+        That warm, usually well-rehearsed opening speech for the event given by
+        its host, may it be a small-scale cultural event or a company’s grand
+        awards ceremony is a welcome address. The primary purpose of having one
+        of these at every event is to greet and offer recognition to all the
+        attendees of that event.
+      </p>
+      <br />
+      <h3 class="heading2">New variant</h3>
+      <p class="para2">
+        That warm, usually well-rehearsed opening speech for the event given by
+        its host, may it be a small-scale cultural event or a company’s grand
+        awards ceremony is a welcome address. The primary purpose of having one
+        of these at every event is to greet and offer recognition to all the
+        attendees of that event.
+      </p>
+    </div>
+  </body>
+</html>
+

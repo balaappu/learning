@@ -1,0 +1,424 @@
+1.class1.html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  
+  font-size: 300%;
+}
+p {
+  color: red;
+  
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+2.extra.html
+
+{% include 'index.html' %}
+{% load static %}
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static 'css/styl.css' %}" rel="stylesheet">
+        <style>
+            body{
+                background-image: url("{% static 'image/back.gif' %} ");
+                height:fit-content;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        </style>
+        {% load static %}
+    </head>
+    <body>
+        <fieldset>
+        <legend align="center">
+        <h1 id="head">Extra Curicular Activity</h1></legend>
+        <br><div>
+            <div class="emain-lab">
+        <p><h2 id="head" align="center">kabaddi</h2>
+            <img src="{% static 'image/kbd.jpeg' %}" width="400px" height="200px"  id="img1">
+        <ul class="eli" >
+            <li>State level tournument runner</li>
+            <li>National tournument participation</li>
+            <li>District level tournument winner</li>
+        </ul></p>
+    </div>
+        <div class="emain-lab">
+        <p><h2 id="head" align="center">Swimming</h2>
+            <img src="{% static 'image/swim1.jpeg' %}" width="400px" height="200px"  id="img1">
+        <ul class="eli" >
+            <li>District level tournument winner</li>
+            <li>State level tournument participation</li>
+        </ul></p>
+    </div>
+        <div class="emain-lab">    
+
+        <p><h2 id="head" align="center">Cubes</h2>
+        <h3 id="esub">Solving 4 level of cubes</h3>
+        <ul class="eli">
+            <li><b id="cu">Squre rubic cube</b><br>
+                <img src="{% static 'image/cube2.jpeg' %}" width="100px" height="100px" align="left" class="img1">
+                <img src="{% static 'image/arow.png' %}" width="100px" height="50px" align="center" id="cen" class="img1">
+                <img src="{% static 'image/cube1.jpeg' %}" width="100px" height="100px" align="right" id="righ" class="img1">
+                <br><br><i id="iti">Solving time - 0.51 MIN</i></li>
+                <br><br>
+            <li><b id="cu">Shapes rubic cube</b><br>
+                <img src="{% static 'image/shape1.jpeg' %}" width="100px" height="100px" align="left" class="img1">
+                <img src="{% static 'image/arow.png' %}" width="100px" height="50px" align="center" id="cen" class="img1">
+                <img src="{% static 'image/shape2.jpeg' %}" width="100px" height="100px" align="right" id="righ" class="img1">
+                <br><br> <i id="iti">Solving time - 2.05 MIN</i></li>
+                <br><br>
+            <li><b id="cu">Hexogone type cube</b><br>
+                <img src="{% static 'image/hex.jpeg' %}" width="100px" height="100px" align="center" id="cen" class="img1">
+                <br><i id="iti">Solving time - 8.25 MIN</i></li><br><br>
+            <li><b id="cu">samoza type cube</b><br>
+                <img src="{% static 'image/sams2.jpeg' %}" width="100px" height="100px" align="left" class="img1">
+                <img src="{% static 'image/arow.png' %}" width="100px" height="50px" align="center" id="cen" class="img1">
+                <img src="{% static 'image/sams1.jpeg' %}" width="100px" height="100px" align="right" id="righ" class="img1">
+                <br><br><i id="iti">Solving time - 2.30 MIN</i></li>
+        </ul>
+    </p>
+</div>
+</div>
+</fieldset>
+<div id="fall"><a href="#" >
+    <img src=" {% static 'image/cuite.gif' %}" width="450px" height="240px" align="right" id="im1"></a>
+    <div>
+    <ul>
+        <li class="flist"><a href="#" class="fli">Contact</a></li>
+        <li class="flist"><a href="#" class="fli">Phone</a></li>
+        <li class="flist"><a href="#" class="fli">Email</a></li>
+        <li class="flist"><a href="#" class="fli">Home</a></li>
+   </ul><br><br>
+   <ul id="ficon">
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/fb.png' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/insta.jpeg' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/serv.png' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/wtapp.png' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/ytube.png' %}" width="30px" height="30px"> </a> </li>
+   </ul>
+</div>
+</div>
+        </body>
+        </html>
+
+3.index.html
+{% load static %}
+<html>
+    <head>
+        {% load static %} 
+        <link href="{% static 'css/styl.css' %}" rel="stylesheet">
+        {% load static %}
+    </head>
+    <body >
+        
+        <center id="top"><img src="{% static 'image/img-main.jpeg' %}" width="150px" height="150px" >
+         <img src="{% static 'image/walk.gif' %}" width="300px" height="200px" align="right" >
+        <img src="{% static 'image/walk.gif' %}" width="300px" height="200px" align="left">
+        <br><b class="top">MY PROFILE</b> <br>
+        <marquee style="color:rgb(10, 10, 10);width:300px;font-size: 30px;  font-weight: bold; height: 40px; padding: 20px 0 10px;font-family: Georgia, 'Times New Roman', Times, serif; ">WELCOME TO MY WEBSITE</marquee>  </center>
+        <navbar>
+            <ul>
+                
+                <li><a href="/"><img src="{% static 'image/home.png' %}" width="30px" height="30px" align="center" class="icon"> Personal Details</a> </li>
+                <li><a href="/qual"><img src="{% static 'image/sms.png' %}" width="30px" height="30px" align="center" class="icon"> Qualification</a> </li>
+                <li><a href="/skill"><img src="{% static 'image/email.png' %}" width="30px" height="30px" align="center" class="icon"> Skills</a> </li>
+                <li><a href="/extra"><img src="{% static 'image/loc.png' %}" width="30px" height="30px" align="center" class="icon"> Extra Activity</a> </li>
+            </ul>
+        </navbar>
+        <hr> 
+    </body>
+</html>
+
+4.personal.html
+{% include 'index.html' %}
+{% load static %}
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static 'css/styl.css' %}" rel="stylesheet">
+        <style>
+            body{
+                background-image: url("{% static 'image/back.gif' %} ");
+                height:fit-content;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        </style>
+        {% load static %}
+    </head>
+    <body id="all">
+        <section class="main-lab">
+            <legend align="center"><h1 id="head">Personal Details</h1></legend>
+            <img src="{% static 'image/pubg.jpeg' %}" width="200px" height="200px" align="right" class="img">
+            <div class="contain">
+            <div class="lab"><label class="lab-sub" id="name">
+                Name : </label><label>
+                Jawahar R</label>
+            </div>
+            <div class="lab"><label class="lab-sub" id="mob">
+                Mobile : </label><label>
+                9585827165</label>
+            </div>
+            <div class="lab"><label class="lab-sub" id="mail">
+                email : </label><label><a href="jawaharjfk@gmail.com">jawaharjfk@gmail</a> </label>
+            </div>
+            <div class="lab"><label class="lab-sub" id="add">
+                Address : </label>
+                <label >
+            88/33,Middle street,</label><br><label class="sub">
+            kutchipalayam<br></label>
+        <label class="sub">p.velur(T.K)<br></label>
+    <label class="sub">Namakkal(D.T)
+            </label>
+            </div>
+        </div>
+        </center>
+        </section>
+        <div id="fall"><a href="#" >
+        <img src=" {% static 'image/cuite.gif' %}" width="450px" height="240px" align="right" id="im1"></a>
+        <div>
+        <ul>
+            <li class="flist"><a href="#" class="fli">Contact</a></li>
+            <li class="flist"><a href="#" class="fli">Phone</a></li>
+            <li class="flist"><a href="#" class="fli">Email</a></li>
+            <li class="flist"><a href="#" class="fli">Home</a></li>
+       </ul><br><br>
+       <ul id="ficon">
+        <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/fb.png' %}" width="30px" height="30px"> </a> </li>
+        <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/insta.jpeg' %}" width="30px" height="30px"> </a> </li>
+        <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/serv.png' %}" width="30px" height="30px"> </a> </li>
+        <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/wtapp.png' %}" width="30px" height="30px"> </a> </li>
+        <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/ytube.png' %}" width="30px" height="30px"> </a> </li>
+       </ul>
+    </div>
+    </div>
+    </body>
+</html>
+5.qual.html
+{% include 'index.html' %}
+{% load static %}
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static 'css/styl.css' %}" rel="stylesheet">
+        <style>
+            body{
+                background-image: url("{% static 'image/back.gif' %} ");
+                height:fit-content;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        </style>
+        {% load static %}
+    </head>
+    <body id="all">
+        <div>
+        <table width="920" cellpadding="50" cellspacing="0" border="5" align="center"  class="qtable">
+        <tr>
+        <th scope="col" id="qhead">Education</th>
+        <th scope="col" id="qhead">Instutive</th>
+        <th scope="col" id="qhead">Year of Passing</th>
+        <th scope="col" id="qhead">Percent</th>
+    </tr>
+    <tr>
+        <th scope="row" id="qhead">10-TH</th>
+        <td id="qsub">Goverment boys higher secondary school, paundamangalam,namakkal(DT)</td>
+        <td id="qsub">2017</td>
+        <td id="qsub">95%</td>
+    </tr>
+    <tr >
+        <th scope="row" id="qhead">12-TH</th>
+        <td id="qsub" class="qrow">Vivekananda higher secondary school, paundamangalam,namakkal(DT)</td>
+        <td id="qsub" class="qrow">2019</td>
+        <td id="qsub" class="qrow">81%</td>
+    </tr>
+    <tr>
+        <th scope="row"  id="qhead">Bsc Electronics</th>
+        <td id="qsub">PSG collage of arts and science,Coimbatore(DT)</td>
+        <td id="qsub">2022</td>
+        <td id="qsub">74%</td>
+    </tr>
+</table> 
+</div>
+<div id="fall"><a href="#" >
+    <img src=" {% static 'image/cuite.gif' %}" width="450px" height="240px" align="right" id="im1"></a>
+    <div>
+    <ul>
+        <li class="flist"><a href="#" class="fli">Contact</a></li>
+        <li class="flist"><a href="#" class="fli">Phone</a></li>
+        <li class="flist"><a href="#" class="fli">Email</a></li>
+        <li class="flist"><a href="#" class="fli">Home</a></li>
+   </ul><br><br>
+   <ul id="ficon">
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/fb.png' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/insta.jpeg' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/serv.png' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/wtapp.png' %}" width="30px" height="30px"> </a> </li>
+    <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/ytube.png' %}" width="30px" height="30px"> </a> </li>
+   </ul>
+</div>
+</div>
+    </body>
+    </html>
+
+6.skills.html
+{% include 'index.html' %}
+{% load static %}
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static 'css/styl.css' %}" rel="stylesheet">
+        <style>
+            body{
+                background-image: url("{% static 'image/back.gif' %} ");
+                height:fit-content;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+        </style>
+        {% load static %}
+    </head>
+    <body id="all">
+        <p><div>
+            <ol>
+            <div class="scon">
+                <li><b id="shead" align="center">Typing speed</b><br>
+                    <img src="{% static 'image/type.jpeg' %}" width="400px" height=300px" class="simg"><P id="w1" class="lab">
+                            The average typing speed is around 40 words per minute (wpm). <br>
+                                     If you want to be very
+productive, you should aim for a typing speed of 65 to 70 words per minute. It is easy with the
+right technique!<br>
+         You will see <b><a href="#" style="text-decoration: none;">improvement in a few weeks</a></b> if you practice often, concentrate on accuracy over
+speed and adopt the proper technique. The hardest part is forgetting your bad habits, even if
+it means typing more slowly at first.</P><hr class="simg1">
+                </li></div>
+            <div class="scon">         
+                <li ><b id="shead" align="center">Communication</b><br>
+                    <img src="{% static 'image/comm1.jpeg' %}" width="400px" height="300px" class="simg"><P id="w1" class="lab">
+                        Computers are an increasingly important part of the communication process. Large
+computers in central locations store <b><a href="#" style="text-decoration: none;"> enormous amounts</a></b> of information and permit other
+computers to use it if desired. Internet connections permit people to see information from a
+library or other program source.<br>
+        No matter what technical advances in <b>communication</b> may occur in the future, the actual
+meaning of any communication will still exist only in the minds of people. Technology is a
+means of helping people to share ideas and feelings, but it will never replace the
+fundamental human need to exchange and interpret information.</P><hr>
+                 </li></div>
+                 <div class="scon">
+                <li ><b id="shead" align="center">Python Programming</b><br>
+                    <img src="{% static 'image/pyth.png' .png%}" width="400px" height="300px" class="simg"><P id="w1" class="lab">
+                        Python has become one of the most popular programming languages in the world in recent
+years. It's used in everything from <b><a href="#" style="text-decoration: none;">machine learning</a></b> to building websites and software
+testing. <br>It can be used by developers and non-developers alike.
+Python has become a staple in data science, allowing data analysts and other professionals
+to use the language to conduct complex statistical calculations, create data visualizations,
+build machine learning algorithms, <b>manipulate </b>and analyze data, and complete other
+data-related tasks.</P><hr>
+                </li>
+                </div>
+            </ol>
+            </div>
+        </p>
+        <div id="fall"><a href="#" >
+            <img src=" {% static 'image/cuite.gif' %}" width="450px" height="240px" align="right" id="im1"></a>
+            <div>
+            <ul>
+                <li class="flist"><a href="#" class="fli">Contact</a></li>
+                <li class="flist"><a href="#" class="fli">Phone</a></li>
+                <li class="flist"><a href="#" class="fli">Email</a></li>
+                <li class="flist"><a href="#" class="fli">Home</a></li>
+           </ul><br><br>
+           <ul id="ficon">
+            <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/fb.png' %}" width="30px" height="30px"> </a> </li>
+            <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/insta.jpeg' %}" width="30px" height="30px"> </a> </li>
+            <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/serv.png' %}" width="30px" height="30px"> </a> </li>
+            <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/wtapp.png' %}" width="30px" height="30px"> </a> </li>
+            <li class="flist"><a href="#" class="ficon"><img src="{% static 'image/ytube.png' %}" width="30px" height="30px"> </a> </li>
+           </ul>
+        </div>
+        </div>
+        </body>
+        </html>
+7.style.css
+#top{
+    
+    border-style: solid;
+    height: 270px;
+    background-image: linear-gradient(black,rgb(224, 228, 14));
+}
+.top{
+    color: rgb(236, 236, 32);
+    font-size: 35px;
+    border-style: solid;
+    background-color: black;
+}
+.mine{
+    width:200px;
+    padding-top: 10px;
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+}
+#all{
+    background-color: rgb(37, 104, 104);
+}
+navbar{
+    width: 100%;
+    padding-left: 0px;
+}
+navbar ul{
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+}
+navbar ul li{
+    width:310px;
+    float: left;
+}
+navbar ul li a{
+    display:block;
+    color: rgb(124, 185, 238);
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    
+    height:50px;
+    padding: 20px 0 0;
+    font-size: 20px;    
+}
+navbar ul li a:hover{
+    background-color: rgb(233, 89, 89);
+    scale: (1.1);
+    transition: background 0.5sec;
+}
+8.views.py
+from django.shortcuts import render
+from django.template import loader
+def index(request):
+    return render(request,'personal.html')
+def qual(request):
+    return render(request,'qual.html')
+def extra(request):
+    return render(request,'extra.html')
+def skill(request):
+    return render(request,'skill.html')
